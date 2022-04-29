@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>comp341</title>
+    <style>
+        
+     .logo{
+    color: white;
+    display: flex;
+    font-size: 28px;
+    text-shadow: 2px 2px;
+    padding: 6px 200px;
+    
+}
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: #089717; */
+  
+  background-image: linear-gradient(to right, #006600, #00FF00 );
+
+  
+}
+
+a{
+    color: white;
+  text-decoration: none;
+}
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 30px;
+}
+li{
+    float: right;
+}
+li a:hover{
+    color: goldenrod;
+}
+
+.sign_up{
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    
+}
+.sign_up_div{
+    /* background-color: #089717; */
+    background-image: linear-gradient(to right, #006600, #00FF00 );
+    
+}
+.active{
+    color: #F39C12;
+}
+.card-outer{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    
+}
+.card{
+    box-shadow: 0 8px 12px 0 rgba(0,0 ,0,0.4);
+    width: 35%;
+    border-radius: 10px 10px 10px 10px;
+}
+.container{
+    padding: 10px;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type=submit] {
+  width: 100%;
+  background-color: #006600;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type=submit]:hover {
+  background-color: #00FF00;
+}
+.centre-btn{
+display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green; 
+}
+    </style>
+</head>
+<body>
+    <ul>
+    <li><a href="#sign_up" class="active"><i class="fa fa-user" style="font-size:16px;color:white"></i> Sign Up</a></li>
+    <li><a href="#info">Info</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#about">Explore</a></li>
+    <li><a href="#contact">Academics</a></li>
+    <li><a href="#news">Admission</a></li> 
+    <li><a class="" href="#home">Home</a></li> 
+    <li class="logo">COMP341</li>
+          
+  </ul>
+
+  <div class="card-outer">
+  <div class="card">
+      <div class="sign_up_div">
+      <h4 class="sign_up">Sign Up</h4>
+    </div>
+    
+    <div class="container">
+      <form action="" method="post">
+          <label for="name">First Name:</label>
+          <input type="text" id="name" name="name" placeholder="full name" autofocus required><br>
+          <label for="regno">Reg No:</label>
+          <input type="text" id="regno" name="regno" placeholder="s12/3456/78"  required><br>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="abc@cde.com"  required><br>
+          <label for="gender">Gender:</label><br>
+          <input type="radio" value="Male" name="gender" id="gender">Male <br>
+          <input type="radio" value="Female" name="gender" id="gender">Female <br>
+          <input type="radio" value="Female" name="gender" id="gender">Prefer not to say <br><br>
+          <label for="passport">Passport:</label>
+          <input type="file"><br><br>
+
+          <div class="center-btn">
+          <button type="submit">Sign Up</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
